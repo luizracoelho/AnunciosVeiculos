@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="AnunciosVeiculos.DL.Marca">
+    <Position X="7.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Marca.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnunciosVeiculos.DL.Modelo">
+    <Position X="4.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAQAAAABAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Modelo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Marca" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnunciosVeiculos.DL.Usuario">
+    <Position X="1" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAQAAAAAKAAAAAAAAAQAAEAAAA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnunciosVeiculos.DL.Veiculo">
+    <Position X="1" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAQAAAEIEAAAAAAAAgEAAAAAAA=</HashCode>
+      <FileName>Veiculo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Modelo" />
+      <Property Name="Usuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
