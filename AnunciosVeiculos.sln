@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnunciosVeiculos.DAL", "Anu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnunciosVeiculos.BLL", "AnunciosVeiculos.BLL\AnunciosVeiculos.BLL.csproj", "{6B6F83B3-D87B-49B2-A426-8788B731329D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnunciosVeiculos.Ui.Web", "AnunciosVeiculos.Ui.Web\AnunciosVeiculos.Ui.Web.csproj", "{25D95024-0195-437B-B61C-F3A110C85DFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnunciosVeiculos.UI.Web", "AnunciosVeiculos.Ui.Web\AnunciosVeiculos.UI.Web.csproj", "{25D95024-0195-437B-B61C-F3A110C85DFB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnunciosVeiculos.DL", "AnunciosVeiculos.DL\AnunciosVeiculos.DL.csproj", "{3DB8F88F-99AD-4066-9028-581AE2829846}"
 EndProject

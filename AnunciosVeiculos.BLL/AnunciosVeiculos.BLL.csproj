@@ -40,7 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MarcaBO.cs" />
+    <Compile Include="ModeloBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioBO.cs" />
+    <Compile Include="VeiculoBO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnunciosVeiculos.DAL\AnunciosVeiculos.DAL.csproj">
+      <Project>{a3517ac2-50f1-4b44-8b5e-a2d89111774b}</Project>
+      <Name>AnunciosVeiculos.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AnunciosVeiculos.DL\AnunciosVeiculos.DL.csproj">
+      <Project>{3db8f88f-99ad-4066-9028-581ae2829846}</Project>
+      <Name>AnunciosVeiculos.DL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
