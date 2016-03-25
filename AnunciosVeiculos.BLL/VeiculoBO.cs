@@ -7,7 +7,7 @@ namespace AnunciosVeiculos.BLL
 {
     public class VeiculoBO
     {
-        public static int Criar(Veiculo veiculo)
+        private static int Criar(Veiculo veiculo)
         {
             try
             {
@@ -19,7 +19,7 @@ namespace AnunciosVeiculos.BLL
             }
         }
 
-        public static int Editar(Veiculo veiculo)
+        private static int Editar(Veiculo veiculo)
         {
             try
             {
@@ -60,6 +60,21 @@ namespace AnunciosVeiculos.BLL
             try
             {
                 return VeiculoDAO.Remover(veiculo);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static int Salvar(Veiculo veiculo)
+        {
+            try
+            {
+                if (veiculo.VeiculoId == 0)
+                    return Criar(veiculo);
+                else
+                    return Editar(veiculo);
             }
             catch (Exception)
             {

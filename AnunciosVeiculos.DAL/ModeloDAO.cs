@@ -47,7 +47,7 @@ namespace AnunciosVeiculos.DAL
             {
                 try
                 {
-                    var query = "Update Usuarios Set Nome=@nome, DataCadastro=@dataCadastro, MarcaId=@marcaId Where ModeloId=@modeloId";
+                    var query = "Update Modelos Set Nome=@nome, DataCadastro=@dataCadastro, MarcaId=@marcaId Where ModeloId=@modeloId";
 
                     using (var cmd = new SqlCommand(query, conn))
                     {
@@ -125,7 +125,7 @@ namespace AnunciosVeiculos.DAL
                 }
                 catch (Exception ex)
                 {
-                    throw ex;
+                    throw;
                 }
                 finally
                 {
@@ -134,7 +134,7 @@ namespace AnunciosVeiculos.DAL
             }
         }
 
-        public static int Remover(Usuario usuario)
+        public static int Remover(Modelo modelo)
         {
             using (var conn = new SqlConnection(ConfigurationManager.ConnectionStrings["AnunciosVeiculos"].ConnectionString))
             {
@@ -144,7 +144,7 @@ namespace AnunciosVeiculos.DAL
 
                     using (var cmd = new SqlCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@modeloId", usuario.UsuarioId);
+                        cmd.Parameters.AddWithValue("@modeloId", modelo.ModeloId);
 
                         conn.Open();
 

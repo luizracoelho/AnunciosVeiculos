@@ -7,7 +7,7 @@ namespace AnunciosVeiculos.BLL
 {
     public class ModeloBO
     {
-        public static int Criar(Modelo modelo)
+        private static int Criar(Modelo modelo)
         {
             try
             {
@@ -19,7 +19,7 @@ namespace AnunciosVeiculos.BLL
             }
         }
 
-        public static int Editar(Modelo modelo)
+        private static int Editar(Modelo modelo)
         {
             try
             {
@@ -60,6 +60,21 @@ namespace AnunciosVeiculos.BLL
             try
             {
                 return ModeloDAO.Remover(modelo);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static int Salvar(Modelo modelo)
+        {
+            try
+            {
+                if (modelo.ModeloId == 0)
+                    return Criar(modelo);
+                else
+                    return Editar(modelo);
             }
             catch (Exception)
             {

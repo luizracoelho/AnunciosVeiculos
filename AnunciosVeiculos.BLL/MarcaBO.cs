@@ -7,7 +7,7 @@ namespace AnunciosVeiculos.BLL
 {
     public class MarcaBO
     {
-        public static int Criar(Marca marca)
+        private static int Criar(Marca marca)
         {
             try
             {
@@ -19,7 +19,7 @@ namespace AnunciosVeiculos.BLL
             }
         }
 
-        public static int Editar(Marca marca)
+        private static int Editar(Marca marca)
         {
             try
             {
@@ -60,6 +60,21 @@ namespace AnunciosVeiculos.BLL
             try
             {
                 return MarcaDAO.Remover(marca);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static int Salvar(Marca marca)
+        {
+            try
+            {
+                if (marca.MarcaId == 0)
+                    return Criar(marca);
+                else
+                    return Editar(marca);
             }
             catch (Exception)
             {

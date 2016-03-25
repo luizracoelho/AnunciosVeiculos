@@ -1,0 +1,5 @@
+C:\Users\LuizRicardo\Dropbox\Reges\5º Termo\Linguagem Web II\AnunciosVeiculos\AnunciosVeiculos.DL\bin\Debug\AnunciosVeiculos.DL.dll
+C:\Users\LuizRicardo\Dropbox\Reges\5º Termo\Linguagem Web II\AnunciosVeiculos\AnunciosVeiculos.DL\bin\Debug\AnunciosVeiculos.DL.pdb
+C:\Users\LuizRicardo\Dropbox\Reges\5º Termo\Linguagem Web II\AnunciosVeiculos\AnunciosVeiculos.DL\obj\Debug\AnunciosVeiculos.DL.csprojResolveAssemblyReference.cache
+C:\Users\LuizRicardo\Dropbox\Reges\5º Termo\Linguagem Web II\AnunciosVeiculos\AnunciosVeiculos.DL\obj\Debug\AnunciosVeiculos.DL.dll
+C:\Users\LuizRicardo\Dropbox\Reges\5º Termo\Linguagem Web II\AnunciosVeiculos\AnunciosVeiculos.DL\obj\Debug\AnunciosVeiculos.DL.pdb

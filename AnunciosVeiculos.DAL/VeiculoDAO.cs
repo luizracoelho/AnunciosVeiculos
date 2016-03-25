@@ -51,7 +51,7 @@ namespace AnunciosVeiculos.DAL
             {
                 try
                 {
-                    var query = "Update Veiculos setModeloId=@modeloId, UsuarioId=@usuarioId, Valor=@valor, AnoFabricacao=@anoFabricacao, AnoModelo=@anoModelo, DataCadastro=@dataCadastro, Hodometro=@hodometro Where VeiculoId=@veiculoId";
+                    var query = "Update Veiculos set ModeloId=@modeloId, UsuarioId=@usuarioId, Valor=@valor, AnoFabricacao=@anoFabricacao, AnoModelo=@anoModelo, DataCadastro=@dataCadastro, Hodometro=@hodometro Where VeiculoId=@veiculoId";
 
                     using (var cmd = new SqlCommand(query, conn))
                     {
