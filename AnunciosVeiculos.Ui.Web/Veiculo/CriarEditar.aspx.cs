@@ -83,8 +83,11 @@ namespace AnunciosVeiculos.Ui.Web.Veiculo
 
         private void AtualizarNomeDaMarca()
         {
-            var modelo = ModeloBO.Encontrar(Convert.ToInt32(ddlModelo.SelectedValue));
-            txtMarca.Text = modelo.Marca.Nome;
+            if (!string.IsNullOrEmpty(ddlModelo.SelectedValue))
+            {
+                var modelo = ModeloBO.Encontrar(Convert.ToInt32(ddlModelo.SelectedValue));
+                txtMarca.Text = modelo.Marca.Nome;
+            }
         }
     }
 }
